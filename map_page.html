@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--/* Links to our style.css file */-->
+    <link rel="stylesheet" href="movingTitleGrids.css">
+    <link rel="stylesheet" href="movingTitleStyle.css">
+    <script type="text/javascript" src="movingTitle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <!--/* Links to our style.css file */-->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #map {
+            height: 100%;
+            /* The height is 400 pixels */
+            width: auto;
+            /* The width is the width of the web page */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="image1" src="https://78.media.tumblr.com/2c51cbb9a1b7255980b5266616588965/tumblr_nzlbq94dlA1rpco88o1_500.gif" />
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+        <h1 id = "title">Locate
+            <span class="txt-rotate" data-period="2000" data-rotate='[ "fun!", "culture.", "pretty views.", "art.", "new experiences."]'></span>
+        </h1>
+        <h2> </h2>
+
+    </div>
+    <div id="col1">
+        <button id="mainButton">ConnectMeNYC</button>
+        <select placeholder="choose" id="type" class="dropdown-trigger">
+                <option value="" disabled selected>Select your option</option>
+                <option value="art_gallery">Art Gallery</option>
+                <option value="library">Library</option>
+                <option value="movie_theatre">Movie Theaters</option>
+                <option value="park">Park</option>
+                <option value="shopping_mall">Shopping mall</option>
+                <option value="museum">Museums</option>
+                <option value="night_club">Nightclub</option>
+            </select>
+    </div>
+    <div id="col2">
+        <div id="map"></div>
+    </div>
+    <!--<div id= "col3">-->
+
+    <!--</div>-->
+    <!--<div id="footer"></div>-->
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa1dfvcXoEUxnHQa3F5fB_pkXIykQ07T4&libraries=places&callback=initMap"></script>
+</body>
